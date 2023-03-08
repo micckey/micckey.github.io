@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">          
+  <script src="https://kit.fontawesome.com/9edd0d232a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I am Mike from Kenya, <br> Welcome to my page</h1>
+      </div>
+    </div>
+  </div>
+  <!-- ----about----  -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="me.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About me</h1>
+          <p>My Name is Michael Juma. I am a Full Stack Developer based in Nairobi, kenya. I am currently a student at Daystar
+            University taking a major in Computer Science. I am open minded and always ready to learn and also contribute to exciting 
+            projects.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">          
+
+
+            <i class="devicon-python-plain" style="font-size: 300%;"></i>
+
+            <i class="devicon-c-line" style="font-size: 300%; margin-left: 10px;" ></i>
+          
+            <i class="devicon-cplusplus-line" style="font-size: 300%; margin-left: 10px;"></i>
+          
+            <i class="devicon-java-plain" style="font-size: 300%; margin-left: 10px;"></i>
+          
+            <i class="devicon-laravel-plain-wordmark" style="font-size: 300%; margin-left: 10px;"></i>
+            
+            <i class="devicon-nodejs-plain" style="font-size: 300%; margin-left: 10px;"></i><br><br>
+
+            <i class="devicon-react-original" style="font-size: 300%;"></i>
+          
+            <i class="devicon-flutter-plain" style="font-size: 300%; margin-left: 10px;"></i>
+          
+            <i class="devicon-html5-plain" style="font-size: 300%; margin-left: 10px;"></i>
+          
+            <i class="devicon-css3-plain" style="font-size: 300%; margin-left: 10px;"></i>
+          
+            <i class="devicon-bootstrap-plain" style="font-size: 300%; margin-left: 10px;"></i>                  
+          
+            
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>N/A</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br>BSc Applied Computer Science from Daystar University</li>
+              <li><span>2022</span><br>Powerlearn Project #1MillionDevs4Africa Program.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----services------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>I do web applications design and developement.</p>
+          
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>I do mobile applications design and developement.</p>
+          
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>I do interface designs for both mobile and web applications.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------portfolio--------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="dash.png" alt="">
+          <div class="layer">
+            <h3>Gym App</h3>
+            <p>This is a design for a gym app I am working on at the moment.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="db.png" alt="">
+          <div class="layer">
+            <h3>App Database</h3>
+            <p>This is a snapshot of the database design.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- ------contact------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>mykeowen254@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>0729751130</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/tuffgon.g"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></i></a> -->
+            <a href="https://github.com/micckey"><i class="fa-brands fa-github"></i></a>
+            <a href="https://slack.com/"><i class="fa-brands fa-slack"></i></a>
+          </div>
+          <a href="mikecv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" , name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright <i class="fa-regular fa-copyright"></i> Juma.</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.left = '0'
+    }
+    function closemenu() {
+      sidemenu.style.left = '-200px'
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKzkBttdba8VrgHMfbXFCWKvnRiZ5qeejlBijQ-XNMZ13rOJAgub12GZ4tLzTMVvgG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
