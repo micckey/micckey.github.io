@@ -332,6 +332,7 @@ nav .fas{
     nav ul li{
         display: block;
         margin: 25px;
+        color: #080808;
 
     }
     nav ul .fas{
