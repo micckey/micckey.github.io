@@ -328,11 +328,12 @@ nav .fas{
         padding-top: 50px;
         z-index: 2;
         transition: left 0.5s;
+        
     }
     nav ul li{
         display: block;
-        margin: 25px;        
-
+        margin: 25px;
+        
     }
     nav ul .fas{
         position: absolute;
