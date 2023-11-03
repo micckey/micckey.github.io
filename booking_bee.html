@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Bee</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/9edd0d232a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="header-buttons">
+            <a href="index.html" class="btnCust btn2"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                Back</a>
+            <a href="https://github.com/micckey/Booking-Bee" class="btnCust btn2"><i class="fa-brands fa-github"></i>
+                Github</a>
+        </div>
+        <h1>Booking Bee</h1>
+
+    </div>
+
+    <section>
+        <div class="container">
+            <p>The Booking Bee organisation is partnered with many different cinemas whereby they are able to display
+                the movies they have premiering in their theatres and allow their customers to book them beforehand.
+                This solves the problem of having to wait in line on the day of premier just to find that all your
+                preferred seats have been taken and all that's left are the seats in the back with the not so much of an
+                immersive experience.</p>
+            <div class="carousel">
+
+                <div class="carousel__buttons">
+                    <label class="prev">&#8249;</label>
+                    <label class="next">&#8250;</label>
+                </div>
+
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <input type="radio" name="slides" id="slide-7">
+                <input type="radio" name="slides" id="slide-8">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/landing.webp" alt="">
+                            </div>
+                            <p>This is the website homepage where the user is able to view a brief description of the
+                                project as well as the movies available in the cinemas. However, at this point they are
+                                not able to book until they log in.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/register.webp" alt="">
+                            </div>
+                            <p>If the user does no have an account, they are allowed to register here.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/login.webp" alt="">
+                            </div>
+                            <p>Users with accounts are allowed to login here.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/dash.webp" alt="">
+                            </div>
+                            <p>Here the user is able to view the available movies and select the most interesting one.
+                                When they click on the book button, they are taken to the area which contains a layout
+                                of the seat arrangement basing on the cinema selected.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/booking.webp" alt="">
+                            </div>
+                            <p>Here, the user selects the most
+                                appropriate seat in the desired position. When the user selects a seat, it turns grey.
+                                When user books the seat by making payments, it turns blue and is disabled meaning no
+                                one else is allowed to pay for the same seat for that particular movie in that
+                                particular cinema.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/payment.webp" alt="">
+                            </div>
+                            <p>Once the user selects a seat and clicks the pay button, this is where they land. Here
+                                they are able to view a summary of the seats selected and the total amount due. They are
+                                then able to make the payments and consequently their seats are reserved.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/history.webp" alt="">
+                            </div>
+                            <p>Here the user is able to view all the seats paid for and is also allowed to cancel the payment provided it is within the set time and they are able to get a refund.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="bee_images/booked.webp" alt="">
+                            </div>
+                            <p>The blue seats have been booked and therefore no one else can pay for the same seat for the same movie </p>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="bee_images/landing.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="bee_images/register.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="bee_images/login.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="bee_images/dash.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="bee_images/booking.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="bee_images/payment.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-7"><img src="bee_images/history.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-8"><img src="bee_images/booked.webp" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const radioButtons = document.querySelectorAll(".carousel input[type='radio']");
+            let currentSlide = 0;
+
+            document.querySelector(".carousel__buttons .prev").addEventListener("click", function () {
+                currentSlide = (currentSlide - 1 + radioButtons.length) % radioButtons.length;
+                radioButtons[currentSlide].checked = true;
+            });
+
+            document.querySelector(".carousel__buttons .next").addEventListener("click", function () {
+                currentSlide = (currentSlide + 1) % radioButtons.length;
+                radioButtons[currentSlide].checked = true;
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
