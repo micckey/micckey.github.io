@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Clash</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/9edd0d232a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="header-buttons">
+            <a href="index.html" class="btnCust btn2"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                Back</a>
+            <a href="https://github.com/micckey/Karate_Clash" class="btnCust btn2"><i class="fa-brands fa-github"></i>
+                Github</a>
+        </div>
+        <h1>Karate Clash</h1>
+
+    </div>
+
+    <section>
+        <div class="container">
+            <p>Karate Clash is an app that allows karatekas to keep track of events happening around them</p>
+            <div class="carousel">
+
+                <div class="carousel__buttons">
+                    <label class="prev">&#8249;</label>
+                    <label class="next">&#8250;</label>
+                </div>
+
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <input type="radio" name="slides" id="slide-7">
+                <input type="radio" name="slides" id="slide-8">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/login.webp" alt="">
+                            </div>
+                            <p>Users are able to login here after creating accounts.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/register.webp" alt="">
+                            </div>
+                            <p>Users without accounts are able to register here</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/register2.webp" alt="">
+                            </div>
+                            <p>Because of the amount of data required the user is required to fill details in all forms before proceeding to the next page</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/register3.webp" alt="">
+                            </div>
+                            <p>Once all forms are filled the next button is activated anf the user can freely switch between the previous and next page</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/dash.webp" alt="">
+                            </div>
+                            <p>Here the user can view the upcoming events.</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/tournament.webp" alt="">
+                            </div>
+                            <p>This is where the user is able to view a tournament and book for it</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/gasshuku.webp" alt="">
+                            </div>
+                            <p>This is where the user is able to view an upcoming seminar (Gasshuku) and confirm their presence</p>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="kc_images/grading.webp" alt="">
+                            </div>
+                            <p>This is where the user is able to view an upcoming grading event and confirm their presence</p>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="kc_images/login.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="kc_images/register.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="kc_images/register2.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="kc_images/register3.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="kc_images/dash.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="kc_images/tournament.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-7"><img src="kc_images/gasshuku.webp" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-8"><img src="kc_images/grading.webp" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const radioButtons = document.querySelectorAll(".carousel input[type='radio']");
+            let currentSlide = 0;
+
+            document.querySelector(".carousel__buttons .prev").addEventListener("click", function () {
+                currentSlide = (currentSlide - 1 + radioButtons.length) % radioButtons.length;
+                radioButtons[currentSlide].checked = true;
+            });
+
+            document.querySelector(".carousel__buttons .next").addEventListener("click", function () {
+                currentSlide = (currentSlide + 1) % radioButtons.length;
+                radioButtons[currentSlide].checked = true;
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
