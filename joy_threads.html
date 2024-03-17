@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking Bee</title>
+    <title>Joy Threads</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="slider.css" />
     <script
@@ -15,25 +15,22 @@
   <body>
     <div class="header">
       <div class="header-buttons">
-        <a href="#" class="btnCust btn2" onclick="goBack()"
+        <a href="#" onclick="goBack()" class="btnCust btn2"
           ><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a
         >
-        <a href="https://github.com/micckey/Booking-Bee" class="btnCust btn2"
+        <a href="https://github.com/micckey/Joy-Threads" class="btnCust btn2"
           ><i class="fa-brands fa-github"></i> Github</a
         >
       </div>
-      <h1>Booking Bee</h1>
+      <h1>Joy Threads</h1>
     </div>
 
     <section>
       <div class="container">
         <p>
-          The Booking Bee organization collaborates with numerous cinemas,
-          enabling them to showcase upcoming movie premieres and facilitate
-          advance bookings for their customers. This resolves the inconvenience
-          of waiting in line on premiere day, only to discover that preferred
-          seats are unavailable, leaving only less immersive options at the
-          back.
+            Joy Threads Inventory Management App is a powerful tool that seamlessly manages your inventory,
+            track stock levels, and effortlessly make sales transactions with a user-friendly interface. The app empowers Joy Threads with real-time insights
+            into sales and profits, allowing for strategic analysis and decision-making. 
         </p>
         <div class="carousel">
           <div class="carousel__buttons">
@@ -53,96 +50,74 @@
             <li class="carousel__slide">
               <figure>
                 <div>
-                  <img src="bee_images/landing.webp" alt="" />
+                  <img src="joy_threads/dash.webp" alt="" />
+                </div>
+                <p>This is the dashboard page prior to any activity in the day.</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="joy_threads/inventory.webp" alt="" />
+                </div>
+                <p>The is the inventory page showcasing the different uniform categories available</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="joy_threads/inventory2.webp" alt="" />
                 </div>
                 <p>
-                  This is the website homepage where the user is able to view a
-                  brief description of the project as well as the movies
-                  available in the cinemas. However, at this point they are not
-                  able to book until they log in.
+                  This is the page showing the available colors for the selected uniform category
                 </p>
               </figure>
             </li>
             <li class="carousel__slide">
               <figure>
                 <div>
-                  <img src="bee_images/register.webp" alt="" />
+                  <img src="joy_threads/add.webp" alt="" />
+                </div>
+                <p>This page allows you to add a particular color for the selected uniform</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="joy_threads/sell.webp" alt="" />
                 </div>
                 <p>
-                  If the user does not have an account, they are allowed to
-                  register here.
+                  This is the prompt that allows you to make a sale.
                 </p>
               </figure>
             </li>
             <li class="carousel__slide">
               <figure>
                 <div>
-                  <img src="bee_images/login.webp" alt="" />
-                </div>
-                <p>Users with accounts are allowed to login here.</p>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="bee_images/dash.webp" alt="" />
+                  <img src="joy_threads/sales.webp" alt="" />
                 </div>
                 <p>
-                  Here the user is able to view the available movies and select
-                  the most interesting one. When they click on the book button,
-                  they are taken to the area which contains a layout of the seat
-                  arrangement basing on the cinema selected.
+                  This is the dashboard after some transactions for that day have taken place
                 </p>
               </figure>
             </li>
             <li class="carousel__slide">
               <figure>
                 <div>
-                  <img src="bee_images/booking.webp" alt="" />
+                  <img src="joy_threads/weeksales.webp" alt="" />
                 </div>
                 <p>
-                  Here, the user selects the most appropriate seat in the
-                  desired position. When the user selects a seat, it turns grey.
-                  When user books the seat by making payments, it turns blue and
-                  is disabled meaning no one else is allowed to pay for the same
-                  seat for that particular movie in that particular cinema.
+                  This is the sales analysis for the week.
                 </p>
               </figure>
             </li>
             <li class="carousel__slide">
               <figure>
                 <div>
-                  <img src="bee_images/payment.webp" alt="" />
+                  <img src="joy_threads/monthsales.webp" alt="" />
                 </div>
                 <p>
-                  Once the user selects a seat and clicks the pay button, this
-                  is where they land. Here they are able to view a summary of
-                  the seats selected and the total amount due. They are then
-                  able to make the payments and consequently their seats are
-                  reserved.
-                </p>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="bee_images/history.webp" alt="" />
-                </div>
-                <p>
-                  Here the user is able to view all the seats paid for and is
-                  also allowed to cancel the payment provided it is within the
-                  set time and they are able to get a refund.
-                </p>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="bee_images/booked.webp" alt="" />
-                </div>
-                <p>
-                  The blue seats have been booked and therefore no one else can
-                  pay for the same seat for the same movie
+                  This is the sales analysis for the month.
                 </p>
               </figure>
             </li>
@@ -150,42 +125,42 @@
           <ul class="carousel__thumbnails">
             <li>
               <label for="slide-1"
-                ><img src="bee_images/landing.webp" alt=""
+                ><img src="joy_threads/dash.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-2"
-                ><img src="bee_images/register.webp" alt=""
+                ><img src="joy_threads/inventory.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-3"
-                ><img src="bee_images/login.webp" alt=""
+                ><img src="joy_threads/inventory2.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-4"
-                ><img src="bee_images/dash.webp" alt=""
+                ><img src="joy_threads/add.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-5"
-                ><img src="bee_images/booking.webp" alt=""
+                ><img src="joy_threads/sell.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-6"
-                ><img src="bee_images/payment.webp" alt=""
+                ><img src="joy_threads/sales.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-7"
-                ><img src="bee_images/history.webp" alt=""
+                ><img src="joy_threads/weeksales.webp" alt=""
               /></label>
             </li>
             <li>
               <label for="slide-8"
-                ><img src="bee_images/booked.webp" alt=""
+                ><img src="joy_threads/monthsales.webp" alt=""
               /></label>
             </li>
           </ul>

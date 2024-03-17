@@ -1,160 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dojo Notes</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="slider.css">
-    <script src="https://kit.fontawesome.com/9edd0d232a.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="slider.css" />
+    <script
+      src="https://kit.fontawesome.com/9edd0d232a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
-
+  <body>
     <div class="header">
-        <div class="header-buttons">
-            <a href="index.html" class="btnCust btn2"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
-            <a href="https://github.com/micckey/Dojo_Notes" class="btnCust btn2"><i class="fa-brands fa-github"></i> Github</a>
-        </div>
-        <h1>Dojo Notes</h1>
-
+      <div class="header-buttons">
+        <a href="#" onclick="goBack()" class="btnCust btn2"
+          ><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a
+        >
+        <a href="https://github.com/micckey/Dojo_Notes" class="btnCust btn2"
+          ><i class="fa-brands fa-github"></i> Github</a
+        >
+      </div>
+      <h1>Dojo Notes</h1>
     </div>
 
     <section>
-        <div class="container">
-            <p>Dojo Notes is a karate notes app that allows users, presumed karatekas to make notes of techniques the want to practice that could turn into reminders.</p>
-            <div class="carousel">
+      <div class="container">
+        <p>
+          Dojo Notes is a karate notes app that allows users, presumed karatekas
+          to make notes of techniques the want to practice that could turn into
+          reminders.
+        </p>
+        <div class="carousel">
+          <div class="carousel__buttons">
+            <label class="prev">&#8249;</label>
+            <label class="next">&#8250;</label>
+          </div>
 
-                <div class="carousel__buttons">
-                    <label class="prev">&#8249;</label>
-                    <label class="next">&#8250;</label>
+          <input type="radio" name="slides" checked="checked" id="slide-1" />
+          <input type="radio" name="slides" id="slide-2" />
+          <input type="radio" name="slides" id="slide-3" />
+          <input type="radio" name="slides" id="slide-4" />
+          <input type="radio" name="slides" id="slide-5" />
+          <input type="radio" name="slides" id="slide-6" />
+          <input type="radio" name="slides" id="slide-7" />
+          <input type="radio" name="slides" id="slide-8" />
+          <ul class="carousel__slides">
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/stories.webp" alt="" />
                 </div>
-
-                <input type="radio" name="slides" checked="checked" id="slide-1">
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <input type="radio" name="slides" id="slide-4">
-                <input type="radio" name="slides" id="slide-5">
-                <input type="radio" name="slides" id="slide-6">
-                <input type="radio" name="slides" id="slide-7">
-                <input type="radio" name="slides" id="slide-8">
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/stories.webp" alt="">
-                            </div>
-                            <p>This is a stories page that initiates users into the app.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/login.webp" alt="">
-                            </div>
-                            <p>Users are able to login here after creating accounts.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/dash.webp" alt="">
-                            </div>
-                            <p>This is the dashboard where the saved notes are displayed. The user is also able to access other app functionalities from this page.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/add note.webp" alt="">
-                            </div>
-                            <p>This page allows the user to create notes.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/set schedule.webp" alt="">
-                            </div>
-                            <p>When a user clicks on a saved note, they are taken to this page where they can schedule a reminder to the note selected.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/notification and badge.webp" alt="">
-                            </div>
-                            <p>This is the notification pop up of the schedule reminder created.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/kata page.webp" alt="">
-                            </div>
-                            <p>Once the user clicks the kata list button on the dashboard, they land on this page where they are able to view katas available.</p>
-                        </figure>
-                    </li>
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="dn_images/kata.webp" alt="">
-                            </div>
-                            <p>When the user clicks on any of the katas, the appropriate information regarding the kata is displayed alongside a video of the kata performance.</p>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label for="slide-1"><img src="dn_images/stories.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img src="dn_images/login.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img src="dn_images/dash.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-4"><img src="dn_images/add note.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-5"><img src="dn_images/set schedule.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-6"><img src="dn_images/notification and badge.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-7"><img src="dn_images/kata page.webp" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-8"><img src="dn_images/kata.webp" alt=""></label>
-                    </li>
-                </ul>
-            </div>
+                <p>This is a stories page that initiates users into the app.</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/login.webp" alt="" />
+                </div>
+                <p>Users are able to login here after creating accounts.</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/dash.webp" alt="" />
+                </div>
+                <p>
+                  This is the dashboard where the saved notes are displayed. The
+                  user is also able to access other app functionalities from
+                  this page.
+                </p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/add note.webp" alt="" />
+                </div>
+                <p>This page allows the user to create notes.</p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/set schedule.webp" alt="" />
+                </div>
+                <p>
+                  When a user clicks on a saved note, they are taken to this
+                  page where they can schedule a reminder to the note selected.
+                </p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/notification and badge.webp" alt="" />
+                </div>
+                <p>
+                  This is the notification pop up of the schedule reminder
+                  created.
+                </p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/kata page.webp" alt="" />
+                </div>
+                <p>
+                  Once the user clicks the kata list button on the dashboard,
+                  they land on this page where they are able to view katas
+                  available.
+                </p>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="dn_images/kata.webp" alt="" />
+                </div>
+                <p>
+                  When the user clicks on any of the katas, the appropriate
+                  information regarding the kata is displayed alongside a video
+                  of the kata performance.
+                </p>
+              </figure>
+            </li>
+          </ul>
+          <ul class="carousel__thumbnails">
+            <li>
+              <label for="slide-1"
+                ><img src="dn_images/stories.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-2"
+                ><img src="dn_images/login.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-3"
+                ><img src="dn_images/dash.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-4"
+                ><img src="dn_images/add note.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-5"
+                ><img src="dn_images/set schedule.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-6"
+                ><img src="dn_images/notification and badge.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-7"
+                ><img src="dn_images/kata page.webp" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slide-8"
+                ><img src="dn_images/kata.webp" alt=""
+              /></label>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const radioButtons = document.querySelectorAll(".carousel input[type='radio']");
-            let currentSlide = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        const radioButtons = document.querySelectorAll(
+          ".carousel input[type='radio']"
+        );
+        let currentSlide = 0;
 
-            document.querySelector(".carousel__buttons .prev").addEventListener("click", function () {
-                currentSlide = (currentSlide - 1 + radioButtons.length) % radioButtons.length;
-                radioButtons[currentSlide].checked = true;
-            });
+        document
+          .querySelector(".carousel__buttons .prev")
+          .addEventListener("click", function () {
+            currentSlide =
+              (currentSlide - 1 + radioButtons.length) % radioButtons.length;
+            radioButtons[currentSlide].checked = true;
+          });
 
-            document.querySelector(".carousel__buttons .next").addEventListener("click", function () {
-                currentSlide = (currentSlide + 1) % radioButtons.length;
-                radioButtons[currentSlide].checked = true;
-            });
-        });
-
+        document
+          .querySelector(".carousel__buttons .next")
+          .addEventListener("click", function () {
+            currentSlide = (currentSlide + 1) % radioButtons.length;
+            radioButtons[currentSlide].checked = true;
+          });
+      });
     </script>
 
-
-</body>
-
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
 </html>
