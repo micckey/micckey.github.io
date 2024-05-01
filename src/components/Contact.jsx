@@ -82,7 +82,7 @@ export default function Contact() {
             <a
               href="mikecv.pdf"
               download
-              className="mt-8 border border-blanchedalmond lg:mr-72 px-10 py-3 rounded text-antiquewhite bg-gray-800 transition-colors duration-500 hover:bg-gray-600"
+              className="mt-8 border text-center border-blanchedalmond lg:mr-72 px-10 py-3 rounded text-antiquewhite bg-gray-800 transition-colors duration-500 hover:bg-gray-600"
             >
               Download CV
             </a>
