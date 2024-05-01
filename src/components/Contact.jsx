@@ -8,7 +8,8 @@ export default function Contact() {
     email: "",
     Message: "",
   });
-  const [message, setMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,19 +25,24 @@ export default function Contact() {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => {
-        if (response.ok) {
-          setMessage("Message sent successfully");
-          setFormData({ Name: "", email: "", Message: "" });
-          setTimeout(() => setMessage(""), 3000); 
-        } else {
-          setMessage("Error sending message");
-        }
-      })
-      .catch((error) => {
-        console.error("Error!", error.message);
-        setMessage("Error sending message");
-      });
+    .then((response) => {
+      if (response.ok) {
+        setAlertMessage("Thank you for your message 🎉");
+        setShowAlert(true);
+        setFormData({ Name: "", email: "", Message: "" });
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 3000); // Hide alert after 3 seconds
+      } else {
+        setAlertMessage("Error sending message ❌");
+        setShowAlert(true);
+      }
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+      setAlertMessage("Error sending message ❌");
+      setShowAlert(true);
+    });
   };
 
   return (
@@ -122,7 +128,11 @@ export default function Contact() {
                 </button>
               </div>
             </form>
-            <span id="msg">{message}</span>
+            {showAlert && (
+              <div className="alert success text-center">
+                {alertMessage}
+              </div>
+            )}
           </div>
         </div>
       </div>

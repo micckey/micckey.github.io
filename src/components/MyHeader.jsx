@@ -9,7 +9,7 @@ export default function Header() {
       className="relative w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-white pt-15 px-10 lg:px-20"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <p className="text-2xl mb-4">Full Stack Developer</p>
+      <p className="text-2xl mb-4">Full Stack Developer 🧑‍💻️</p>
       <h1 className="text-4xl lg:text-6xl font-bold text-center">
         <Typewriter
           options={{
