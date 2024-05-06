@@ -25,33 +25,33 @@ export default function Contact() {
       },
       body: JSON.stringify(formData),
     })
-    .then((response) => {
-      if (response.ok) {
-        setAlertMessage("Thank you for your message 🎉");
-        setShowAlert(true);
-        setFormData({ Name: "", email: "", Message: "" });
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 3000); // Hide alert after 3 seconds
-      } else {
+      .then((response) => {
+        if (response.ok) {
+          setAlertMessage("Thank you for your message 🎉");
+          setShowAlert(true);
+          setFormData({ Name: "", email: "", Message: "" });
+          setTimeout(() => {
+            setShowAlert(false);
+          }, 3000); // Hide alert after 3 seconds
+        } else {
+          setAlertMessage("Error sending message ❌");
+          setShowAlert(true);
+        }
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
         setAlertMessage("Error sending message ❌");
         setShowAlert(true);
-      }
-    })
-    .catch((error) => {
-      console.error("Error!", error.message);
-      setAlertMessage("Error sending message ❌");
-      setShowAlert(true);
-    });
+      });
   };
 
   return (
-    <div id="contact" className="mt-30 bg-my-bg text-white">
-      <div className="container px-5 ">
+    <div id="contact" className="mt-30 bg-my-bg text-white ">
+      <div className="container px-5 md:mx-auto">
         <h1 className="text-3xl font-bold text-center mb-5">Contact Me</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center mx-10 lg:ml-28">
-            <p className="flex items-center mb-2 lg:text-xl">
+          <div className="flex flex-col justify-center mx-10">
+            <p className="flex items-center justify-center lg:justify-start mb-2 lg:text-xl">
               <FaPaperPlane className="text-base mr-2" />
               mykeowen254@gmail.com
             </p>
@@ -87,7 +87,7 @@ export default function Contact() {
               Download CV
             </a>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center md:mx-10">
             <form
               name="submit-to-formspree"
               onSubmit={handleSubmit}
@@ -129,9 +129,7 @@ export default function Contact() {
               </div>
             </form>
             {showAlert && (
-              <div className="alert success text-center">
-                {alertMessage}
-              </div>
+              <div className="alert success text-center">{alertMessage}</div>
             )}
           </div>
         </div>
