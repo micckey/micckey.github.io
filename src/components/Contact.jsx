@@ -47,10 +47,10 @@ export default function Contact() {
 
   return (
     <div id="contact" className="mt-30 bg-my-bg text-white">
-      <div className="container px-5 lg:ml-36">
+      <div className="container px-5 ">
         <h1 className="text-3xl font-bold text-center mb-5">Contact Me</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center mx-10">
+          <div className="flex flex-col justify-center mx-10 lg:ml-28">
             <p className="flex items-center mb-2 lg:text-xl">
               <FaPaperPlane className="text-base mr-2" />
               mykeowen254@gmail.com
@@ -82,7 +82,7 @@ export default function Contact() {
             <a
               href="mikecv.pdf"
               download
-              className="mt-8 border text-center border-blanchedalmond lg:mr-72 px-10 py-3 rounded text-antiquewhite bg-gray-800 transition-colors duration-500 hover:bg-gray-600"
+              className="mt-8 border text-center border-blanchedalmond lg:mr-64 px-10 py-3 rounded text-antiquewhite bg-gray-800 transition-colors duration-500 hover:bg-gray-600"
             >
               Download CV
             </a>
