@@ -13,7 +13,7 @@ export default function Header() {
       <h1 className="text-4xl lg:text-6xl font-bold text-center">
         <Typewriter
           options={{
-            strings: ["Hi, I am Mike from Kenya, Welcome to my page."],
+            strings: ["Hi, I am Mike from Kenya. Welcome to my page."],
             autoStart: true,
             loop: true,
           }}
