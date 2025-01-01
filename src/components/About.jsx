@@ -76,8 +76,14 @@ export default function About() {
             <div className={`${activeTab !== "experience" && "hidden"}`}>
               <div className="text-sm lg:text-xl mt-5">
                 <ul>
-                  <li>Building School Projects</li>
-                  <li>Building Personal Projects</li>
+                  <li className="mt-2">
+                    <span className="font-bold">
+                      May - July 2024:{" "}
+                    </span>
+                    Full Stack Developer at PlatDel®️
+                  </li>
+                  <li className="mt-2">Building School Projects</li>
+                  <li className="mt-2">Building Personal Projects</li>
                 </ul>
               </div>
             </div>
@@ -85,11 +91,11 @@ export default function About() {
               <div className="text-sm lg:text-xl mt-5">
                 <ul>
                   <li>
-                    <span className="font-extrabold">2024</span>
+                    <span className="font-extrabold">2020 - 2024</span>
                     <br />
                     BSc Applied Computer Science from Daystar University
                   </li>
-                  <li>
+                  <li className="mt-2">
                     <span className="font-extrabold">2022</span>
                     <br />
                     Powerlearn Project #1MillionDevs4Africa Program.

@@ -80,7 +80,7 @@ export default function Contact() {
               </a>
             </div>
             <a
-              href="mikecv.pdf"
+              href="Michael_Juma_CV.pdf"
               download
               className="mt-8 border text-center border-blanchedalmond lg:mr-64 px-10 py-3 rounded text-antiquewhite bg-gray-800 transition-colors duration-500 hover:bg-gray-600"
             >

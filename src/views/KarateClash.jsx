@@ -1,34 +1,66 @@
 import Slider from "../components/Slider";
-import dashImage from "../assets/kc_images/dash.webp";
-import tournamentImage from "../assets/kc_images/tournament.webp";
-import gashukkuImage from "../assets/kc_images/gasshuku.webp";
-import gradingImage from "../assets/kc_images/grading.webp";
+
+import registerImage from "../assets/kc_images/reg.webp";
+import loginImage from "../assets/kc_images/login.webp";
+import dashboardImage from "../assets/kc_images/dash.webp";
+import tournamentImage from "../assets/kc_images/book.webp";
+import paymentImage from "../assets/kc_images/pay.webp";
+import postingImage from "../assets/kc_images/post.webp";
+import analysisImage from "../assets/kc_images/analysis.webp";
+import reportImage from "../assets/kc_images/report.webp";
+
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiFlutter } from "react-icons/si";
 
 const slides = [
   {
-    image: dashImage,
+    image: dashboardImage,
     title: "Dashboard",
     description:
-      "Here, users can explore upcoming events, from tournaments to gradings and gashukkus. Additionally, available courses such as referee, coach, and instructor courses are featured.",
+      "A centralized hub to view upcoming events, courses, and Gasshukus.",
   },
+  {
+    image: registerImage,
+    title: "Register",
+    description:
+      "Seamlessly create your account to access Karate Clash and explore its exciting features.",
+  },
+  {
+    image: loginImage,
+    title: "Login",
+    description:
+      "Securely log in to manage your profile, participate in events, and stay connected.",
+  },
+
   {
     image: tournamentImage,
-    title: "Tournaments page",
+    title: "Book a Tournament",
     description:
-      "Here, users can view tournaments and make bookings in advance.",
+      "Register for tournaments with ease and secure your spot in upcoming competitions.",
   },
   {
-    image: gashukkuImage,
-    title: "Gashukku page",
-    description: "Here, users can view upcoming seminars (Gashukkus) and RSVP.",
+    image: paymentImage,
+    title: "Payment",
+    description:
+      "Simplify your transactions with secure payment options for events and courses.",
   },
   {
-    image: gradingImage,
-    title: "Grading page",
+    image: postingImage,
+    title: "Event Posting",
     description:
-      "Here, users can view upcoming grading events and confirm attendance.",
+      "Create and manage event postings to keep your community informed and engaged.",
+  },
+  {
+    image: analysisImage,
+    title: "Performance Analysis",
+    description:
+      "Gain insights regarding confirmed bookings for the tournament.",
+  },
+  {
+    image: reportImage,
+    title: "Reports",
+    description:
+      "Access comprehensive reports to regarding the tournament bookings.",
   },
 ];
 
