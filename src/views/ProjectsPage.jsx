@@ -5,6 +5,7 @@ import bookingBeeImage from "../assets/bee_images/mockup.webp";
 import dojoNotesImage from "../assets/dn_images/mockup.webp";
 import karateClashImage from "../assets/kc_images/mockup.webp";
 import passionPickImage from "../assets/passion_pick/mockup.webp";
+import faithBridgeImage from "../assets/faith_bridge/mockup.webp";
 
 function ProjectsPage() {
   return (
@@ -13,6 +14,18 @@ function ProjectsPage() {
         <h1 className="text-3xl text-white font-bold mt-8 mb-4">Projects</h1>
 
         <div className="grid grid-cols-1 gap-8">
+          <ProjectCard
+            image={karateClashImage}
+            title="Karate Clash"
+            description="Prepare for the ultimate martial arts experience with Karate Clash! Our mobile app keeps karatekas informed about nearby tournaments, helping you stay ahead. Seamlessly track events, locations, and schedules, ensuring you're ready to shine on the tatami."
+            link="/projects/karate-clash"
+          />
+          <ProjectCard
+            image={dojoNotesImage}
+            title="Dojo Notes"
+            description="Introducing Dojo Notes, the ultimate mobile app for karatekas. Plan your training effortlessly, optimize every session, and empower your martial arts journey."
+            link="/projects/dojo-notes"
+          />
           <ProjectCard
             image={passionPickImage}
             title="Passion Pick"
@@ -32,16 +45,10 @@ function ProjectsPage() {
             link="/projects/booking-bee"
           />
           <ProjectCard
-            image={dojoNotesImage}
-            title="Dojo Notes"
-            description="Introducing Dojo Notes, the ultimate mobile app for karatekas. Plan your training effortlessly, optimize every session, and empower your martial arts journey."
-            link="/projects/dojo-notes"
-          />
-          <ProjectCard
-            image={karateClashImage}
-            title="Karate Clash"
-            description="Prepare for the ultimate martial arts experience with Karate Clash! Our mobile app keeps karatekas informed about nearby tournaments, helping you stay ahead. Seamlessly track events, locations, and schedules, ensuring you're ready to shine on the tatami."
-            link="/projects/karate-clash"
+            image={faithBridgeImage}
+            title="Faith Bridge Academy"
+            description="Faith Bridge Academy, located in Kachibora, Trans Nzoia County, is dedicated to providing quality education while nurturing spiritual growth. Our mission is to empower students through excellence, professionalism, and self-driven motivation."
+            link="https://vision2030stamped.co.ke/faithbridge"
           />
           <div className="mb-2"></div>
         </div>
@@ -51,6 +58,7 @@ function ProjectsPage() {
 }
 
 const ProjectCard = ({ image, title, description, link }) => {
+  const isExternal = link.startsWith("http");
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden grid grid-cols-1 sm:grid-cols-4 p-6">
       {/* Image */}
@@ -69,9 +77,23 @@ const ProjectCard = ({ image, title, description, link }) => {
         <p className="text-gray-700 hidden sm:block">{description}</p>
 
         {/* Link */}
-        <Link to={link} className="border border-black p-2 rounded-md">
-          View Project
-        </Link>
+        {isExternal ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-black p-2 rounded-md hover:bg-gray-300"
+          >
+            View Project
+          </a>
+        ) : (
+          <Link
+            to={link}
+            className="border border-black p-2 rounded-md hover:bg-gray-300"
+          >
+            View Project
+          </Link>
+        )}
       </div>
     </div>
   );
