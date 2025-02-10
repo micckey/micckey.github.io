@@ -1,6 +1,6 @@
-import BookingBee from "../assets/bee_images/dash.webp";
-import PassionPick from "../assets/passion_pick/dash.webp";
-import KarateClash from "../assets/kc_images/dash.webp";
+import BookingBee from "../assets/bee_images/mockup.webp";
+import PassionPick from "../assets/passion_pick/mockup.webp";
+import KarateClash from "../assets/kc_images/mockup.webp";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 

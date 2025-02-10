@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import joyThreadsImage from "../assets/joy_threads/dash.webp";
-import bookingBeeImage from "../assets/bee_images/dash.webp";
-import dojoNotesImage from "../assets/dn_images/dash.webp";
-import karateClashImage from "../assets/kc_images/dash.webp";
-import passionPickImage from "../assets/passion_pick/dash.webp";
+import joyThreadsImage from "../assets/joy_threads/mockup.webp";
+import bookingBeeImage from "../assets/bee_images/mockup.webp";
+import dojoNotesImage from "../assets/dn_images/mockup.webp";
+import karateClashImage from "../assets/kc_images/mockup.webp";
+import passionPickImage from "../assets/passion_pick/mockup.webp";
 
 function ProjectsPage() {
   return (
