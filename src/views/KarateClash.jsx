@@ -9,8 +9,9 @@ import postingImage from "../assets/kc_images/post.webp";
 import analysisImage from "../assets/kc_images/analysis.webp";
 import reportImage from "../assets/kc_images/report.webp";
 
-import { IoLogoFirebase } from "react-icons/io5";
+import { SiFirebase } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa6";
 
 const slides = [
   {
@@ -73,7 +74,8 @@ export default function KarateClash() {
         </h1>
         <div className="flex justify-center mb-10">
           <SiFlutter className="text-white text-3xl mx-3 dance-animation" />
-          <IoLogoFirebase className="text-white text-3xl mx-3 dance-animation" />
+          <SiFirebase className="text-white text-3xl mx-3 dance-animation" />
+          <FaLaravel className="text-white text-3xl mx-3 dance-animation" />
         </div>
         <Slider slides={slides} />
       </div>

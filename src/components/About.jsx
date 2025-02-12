@@ -1,7 +1,8 @@
 import { useState } from "react";
 import myImage from "../assets/me.webp";
 import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
-import { DiPython, DiLaravel, DiGo } from "react-icons/di";
+import { FaLaravel } from "react-icons/fa6";
+import { DiPython, DiGo } from "react-icons/di";
 import { SiFlutter } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
 
@@ -64,7 +65,7 @@ export default function About() {
                 <SiFlutter className="text-3xl lg:text-4xl" />
                 <DiPython className="text-3xl lg:text-4xl" />
                 <FaNodeJs className="text-3xl lg:text-4xl" />
-                <DiLaravel className="text-3xl lg:text-4xl" />
+                <FaLaravel className="text-3xl lg:text-4xl" />
                 <DiGo className="text-3xl" />
               </div>
               <div className="flex space-x-5 items-center mt-5">
