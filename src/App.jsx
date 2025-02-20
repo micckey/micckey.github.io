@@ -8,6 +8,7 @@ import PassionPick from "./views/PassionPick";
 import DefaultLayout from "./views/DefaultLayout";
 import ProjectsLayout from "./views/ProjectsLayout";
 import KarateClash from "./views/KarateClash";
+import Glamify from "./views/Glamify";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects/joy-threads" element={<JoyThreads />} />
         <Route path="/projects/passion-pick" element={<PassionPick />} />
         <Route path="/projects/karate-clash" element={<KarateClash />} />
+        <Route path="/projects/glamify" element={<Glamify />} />
       </Route>
     </Routes>
   );

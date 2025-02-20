@@ -17,7 +17,9 @@ export default function ProjectsLayout() {
   } else if (location.pathname === "/projects/passion-pick") {
     githubLink = "https://github.com/micckey/PassionPicks";
   } else if (location.pathname === "/projects/karate-clash") {
-    githubLink = "https://github.com/username/Karate_Clash";
+    githubLink = "https://github.com/micckey/Karate_Clash";
+  } else if (location.pathname === "/projects/glamify") {
+    githubLink = "https://github.com/micckey/beautonomi";
   }
 
   return (

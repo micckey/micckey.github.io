@@ -4,6 +4,7 @@ import joyThreadsImage from "../assets/joy_threads/mockup.webp";
 import bookingBeeImage from "../assets/bee_images/mockup.webp";
 import dojoNotesImage from "../assets/dn_images/mockup.webp";
 import karateClashImage from "../assets/kc_images/mockup.webp";
+import glamifyImage from "../assets/glamify/mockup.webp";
 import passionPickImage from "../assets/passion_pick/mockup.webp";
 import faithBridgeImage from "../assets/faith_bridge/mockup.webp";
 
@@ -19,6 +20,12 @@ function ProjectsPage() {
             title="Karate Clash"
             description="Prepare for the ultimate martial arts experience with Karate Clash! Our mobile app keeps karatekas informed about nearby tournaments, helping you stay ahead. Seamlessly track events, locations, and schedules, ensuring you're ready to shine on the tatami."
             link="/projects/karate-clash"
+          />  
+          <ProjectCard
+            image={glamifyImage}
+            title="Glamify"
+            description="Glam starts here, where every detail brings out your unique beauty."
+            link="/projects/glamify"
           />
           <ProjectCard
             image={dojoNotesImage}
