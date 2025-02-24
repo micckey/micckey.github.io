@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useMedia } from "react-use";
 
 const SliderComponent = ({ slides }) => {
-  const isSmallDevice = useMedia("(max-width: 640px)");
+  const isSmallDevice = useMedia("(max-width: 768px)");
 
   const settings = {
     dots: !isSmallDevice,
@@ -20,12 +20,17 @@ const SliderComponent = ({ slides }) => {
     <div className="relative mx-10 lg:mx-32 bg-my-bg">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="mb-10">
+          <div key={index} 
+
+          className={`${isSmallDevice ? "mb-5 px-3" : ""}`}
+
+          // className="mb-10"
+          >
             
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full max-h-[600px] bg-my-bg md:max-h-[650px] md:object-contain"
+              className="w-full max-h-[750px] bg-my-bg md:max-h-[800px] md:object-contain"
             />
             <div className="p-4 bg-opacity-50 text-white">
               <p className="text-sm text-center">{slide.description}</p>
