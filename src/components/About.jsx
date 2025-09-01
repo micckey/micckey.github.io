@@ -27,12 +27,12 @@ export default function About() {
           <div className="about-col-2">
             <h1 className="text-3xl font-bold">About me</h1>
             <p className="mb-8 text-sm lg:text-xl">
-              My name is Michael Juma, a Full Stack Developer residing in
-              Nairobi, Kenya. Currently pursuing a degree in Computer Science at
-              Daystar University, I am passionate about technology and committed
-              to expanding my knowledge base. With an open-minded approach, I
-              eagerly embrace opportunities to learn and actively contribute to
-              engaging projects.
+              I’m Michael Juma, a Full-Stack Developer and Flutter Enthusiast
+              from Nairobi, Kenya. With 3 years of experience in Flutter, React,
+              and Laravel, I build scalable, user-focused applications. A
+              Computer Science graduate from Daystar University, I’m passionate
+              about creating impactful tech solutions and continuously pushing
+              my skills forward.
             </p>
             <div className="flex space-x-5">
               <p
@@ -77,17 +77,89 @@ export default function About() {
             <div className={`${activeTab !== "experience" && "hidden"}`}>
               <div className="text-sm lg:text-xl mt-5">
                 <ul>
-                  <li className="mt-2">
-                    <span className="font-bold">
-                      May - July 2024:{" "}
-                    </span>
-                    Full Stack Developer at PlatDel®️
+                  <li className="mt-4">
+                    <span className="font-bold">Apr 2025 – Present: </span>
+                    Full Stack Developer at Bitwise Digital Solutions
+                    <ul className="list-disc ml-6 mt-2 text-sm lg:text-lg">
+                      <li>
+                        Develop cross-platform mobile applications using Flutter
+                        and React Native.
+                      </li>
+                      <li>
+                        Contribute to backend development with Node.js and Go
+                        (Golang).
+                      </li>
+                    </ul>
                   </li>
-                  <li className="mt-2">Building School Projects</li>
-                  <li className="mt-2">Building Personal Projects</li>
+
+                  <li className="mt-4">
+                    <span className="font-bold">Sep 2024 – Feb 2025: </span>
+                    Intern Developer at AgentBiz Technologies®
+                    <ul className="list-disc ml-6 mt-2 text-sm lg:text-lg">
+                      <li>
+                        Built responsive mobile and web frontends with Flutter
+                        and React.
+                      </li>
+                      <li>
+                        Maintained and enhanced backend systems using Laravel.
+                      </li>
+                      <li>
+                        Collaborated with peers to improve code quality and team
+                        efficiency.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="mt-4">
+                    <span className="font-bold">May – Jul 2024: </span>
+                    Full Stack Developer at PlatDel®
+                    <ul className="list-disc ml-6 mt-2 text-sm lg:text-lg">
+                      <li>
+                        Delivered responsive mobile and web applications with
+                        Flutter.
+                      </li>
+                      <li>
+                        Engineered secure, scalable backends with Laravel.
+                      </li>
+                      <li>
+                        Designed intuitive UI/UX interfaces to boost user
+                        engagement.
+                      </li>
+                    </ul>
+                  </li>
+
+                  {/* <li className="mt-4">
+                    <span className="font-bold">May – Aug 2022: </span>
+                    County ICT Assistant at IEBC Office, West Pokot County
+                    <ul className="list-disc ml-6 mt-2 text-sm lg:text-lg">
+                      <li>
+                        Configured and maintained KIEMS kits and electoral
+                        software.
+                      </li>
+                      <li>
+                        Set up laptops, printers, and networking infrastructure.
+                      </li>
+                      <li>
+                        Performed data entry and document preparation for
+                        elections.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="mt-4">
+                    <span className="font-bold">May – Aug 2021: </span>
+                    ICT Casual at IEBC Office, Machakos Town
+                    <ul className="list-disc ml-6 mt-2 text-sm lg:text-lg">
+                      <li>
+                        Assisted with maintenance and charging of election kits.
+                      </li>
+                      <li>Handled data entry and document formatting tasks.</li>
+                    </ul>
+                  </li> */}
                 </ul>
               </div>
             </div>
+
             <div className={`${activeTab !== "education" && "hidden"}`}>
               <div className="text-sm lg:text-xl mt-5">
                 <ul>

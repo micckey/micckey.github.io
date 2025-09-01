@@ -6,7 +6,7 @@ import dojoNotesImage from "../assets/dn_images/mockup.webp";
 import karateClashImage from "../assets/kc_images/mockup.webp";
 import glamifyImage from "../assets/glamify/mockup.webp";
 import passionPickImage from "../assets/passion_pick/mockup.webp";
-import faithBridgeImage from "../assets/faith_bridge/mockup.webp";
+// import faithBridgeImage from "../assets/faith_bridge/mockup.webp";
 
 function ProjectsPage() {
   return (
@@ -20,7 +20,7 @@ function ProjectsPage() {
             title="Karate Clash"
             description="Prepare for the ultimate martial arts experience with Karate Clash! Our mobile app keeps karatekas informed about nearby tournaments, helping you stay ahead. Seamlessly track events, locations, and schedules, ensuring you're ready to shine on the tatami."
             link="/projects/karate-clash"
-          />  
+          />
           <ProjectCard
             image={glamifyImage}
             title="Glamify"
@@ -51,12 +51,12 @@ function ProjectsPage() {
             description="The Booking Bee organization collaborates with numerous cinemas, enabling them to showcase upcoming movie premieres and facilitate advance bookings for their customers. This resolves the inconvenience of waiting in line on premiere day, only to discover that preferred seats are unavailable, leaving only less immersive options at the back."
             link="/projects/booking-bee"
           />
-          <ProjectCard
+          {/* <ProjectCard
             image={faithBridgeImage}
             title="Faith Bridge Academy"
             description="Faith Bridge Academy, located in Kachibora, Trans Nzoia County, is dedicated to providing quality education while nurturing spiritual growth. Our mission is to empower students through excellence, professionalism, and self-driven motivation."
             link="https://vision2030stamped.co.ke/faithbridge"
-          />
+          /> */}
           <div className="mb-2"></div>
         </div>
       </div>
